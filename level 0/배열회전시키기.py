@@ -7,3 +7,4 @@ def solution(numbers, direction):
     else:
         numbers.rotate(-1)
     return list(numbers)
+print(solution([1,2,3,4], "right"))
