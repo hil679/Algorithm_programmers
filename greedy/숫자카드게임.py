@@ -22,6 +22,15 @@ def otherSol1(): #입력 한 줄씩 받으면서 구하기
     print(result)
 otherSol1()
 
+def sol2():
+    n, m = map(int, sys.stdin.readline().split())
+    result = 0
+    while n > 0:
+        arr = list(map(int, sys.stdin.readline().split()))
+        minValue = min(arr)
+        result = max(minValue, result)
+        n -= 1
+    print(result)
 
-
+sol2()
 
